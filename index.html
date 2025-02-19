@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <link rel="stylesheet" href="/Style/index.css" />
+    <link rel="stylesheet" href="/Style/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Index</title>
+  </head>
+
+  <body>
+    <!-- Introduction -->
+    <section id="intro-section">
+      <div id="intro-section-background">
+        <div id="intro-main-div">
+          <div>
+            <h1 id="intro-heading">Hi, I am Min Rui !</h1>
+            <p>
+              I am an aspiring software engineer that recently completed my
+              Diploma in Information Technology, specialising in Immersive
+              Simulation. I hope to further my studies and develop innovative
+              solutions for real-world problems through programming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project-section" class="border-red">
+      <div class="main-div">
+        <h1 class="section-title">Projects</h1>
+        <div id="project-catergories-tab" class="d-flex">
+          <div
+            class="project-catergories-tab selected"
+            onclick="changeProjectCategory(0)"
+          >
+            <p>Games</p>
+          </div>
+          <div
+            onclick="changeProjectCategory(1)"
+            class="project-catergories-tab"
+          >
+            <p>3D Models</p>
+          </div>
+          <div
+            onclick="changeProjectCategory(2)"
+            class="project-catergories-tab"
+          >
+            <p>Website</p>
+          </div>
+        </div>
+        <div>
+          <div id="project-container-swiper" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div id="project-div-1" class="project-catergories-div">
+                  <div
+                    id="project-game-carousel-div"
+                    class="project-carousel-div"
+                  >
+                    <div class="cell">
+                      <h2 class="project-title" style="font-family: 'AutoMode'">
+                        <span
+                          style="
+                            background-image: linear-gradient(
+                              to right,
+                              #ff7b00,
+                              #ff9100
+                            );
+                            background-clip: text;
+                            color: transparent;
+                          "
+                          >Eclipse</span
+                        >
+                        <span
+                          style="
+                            color: white;
+                            text-shadow: 0px 0px 5px #ff8519,
+                              0px 0px 10px #ff6a00;
+                            -webkit-text-stroke: 1px rgb(255, 174, 0);
+                          "
+                          >Odyssey</span
+                        >
+                      </h2>
+                      <div class="project-content-div">
+                        <div>
+                          <p class="description">
+                            Eclipse Odyssey is a VR game developed in Unity
+                            using C#. The main character, Asuna, must navigate
+                            through Etherium and Celestium, overcoming obstacles
+                            to recover the Ethereal and Celestial crystals and
+                            save Infinity Nexus. I worked on the Etherium
+                            section, which features a maze. Initially, it was
+                            designed as a mirror maze to increase difficulty and
+                            engagement, but implementing multiple cameras caused
+                            significant lag. However, without the mirror maze,
+                            players can still be engaged in combatting enemies
+                            to retrieve the Etherium crystal
+                          </p>
+                        </div>
+                        <div class="project-content">
+                          <iframe
+                            src="https://www.youtube.com/embed/051vPCsBrx0?"
+                            title="Eclipse Odyssey"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="project-game-video"
+                            id="project-game-video-0"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <h3
+                        class="project-title"
+                        style="
+                          font-family: 'OverThere';
+                          background-image: linear-gradient(
+                            to right,
+                            #9900ff,
+                            #0015ff
+                          );
+                          background-clip: text;
+                          color: transparent;
+                        "
+                      >
+                        Cosmo Wars
+                      </h3>
+                      <div class="project-content-div">
+                        <div>
+                          <p class="description">
+                            This is a simplified VR aircraft simulation game,
+                            inspired by a minigame from Mario Party 8 and the
+                            flying from Hogwarts Legacy. I designed it using my
+                            understanding of throttle and handle physics, which
+                            I learned from watching motorsports. In the game,
+                            players attempt to pilot an aircraft while
+                            combatting their enemies. They must manoeuvre the
+                            handle to control direction and adjust the throttle
+                            to regulate speed, all while navigating toward a
+                            space station. They can also activate the aircraft's
+                            projectile to attack enemy's. For the sake of the
+                            video, the gameplay has been shortened and further
+                            simplified.
+                          </p>
+                        </div>
+                        <div class="project-content">
+                          <iframe
+                            src="https://www.youtube.com/embed/Vy6LLCIJGaY?"
+                            title="Aircraft Simulator"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="project-game-video"
+                            id="project-game-video-1"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <h1
+                        class="project-title"
+                        style="
+                          font-family: AngerStyle;
+                          color: rgb(200, 0, 72);
+                          -webkit-text-stroke: 1px black;
+                        "
+                      >
+                        Soul Rift
+                      </h1>
+                      <div class="project-content-div">
+                        <div>
+                          <p class="description">
+                            Soul Rift is a VR game developed in Unity using C#.
+                            After a tragic accident, Kuroki becomes trapped in
+                            Soul Rift — a mysterious realm between life and
+                            death. To reclaim her life, she must undergo a
+                            series of trials that test her strength and will to
+                            survive. Each stage represents a different stages of
+                            suffering, inspired by the concept of hell. This
+                            idea came about when my friends and I were visiting
+                            Haw Par Villa during our holidays. We were intrigued
+                            by how uncanny and sinister the place was and
+                            combined the concept with our favoruite Netflix
+                            show, Alice In Borderland.
+                          </p>
+                        </div>
+                        <div class="project-content">
+                          <iframe
+                            src="https://www.youtube.com/embed/IfWLcAYeHZI?"
+                            title="Soul Rift"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="project-game-video"
+                            id="project-game-video-2"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="cell">
+                      <h2
+                        class="project-title"
+                        style="
+                          margin-bottom: 0px;
+                          color: rgb(255, 247, 93);
+                          -webkit-text-stroke: 1.5px black;
+                          font-family: 'LemonMilk';
+                        "
+                      >
+                        Blow Your Mind
+                      </h2>
+                      <div class="project-content-div">
+                        <div>
+                          <p class="description">
+                            Blow Your Mind is a VR game developed in Unity using
+                            C# . The game was inspired by Keep Talking and
+                            Nobody Explodes, aiming to indulge players in a
+                            problem solving game. The room features navigation
+                            portals that allow players to move around and search
+                            for key components required to defuse the bomb.
+                            Players must explore the environment, identify the
+                            correct items, and assemble them into the bomb model
+                            before the five minute countdown runs out.
+                          </p>
+                        </div>
+                        <div class="project-content">
+                          <iframe
+                            src="https://www.youtube.com/embed/WBP6yekDy80?"
+                            title="Blow Your Mind"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="project-game-video"
+                            id="project-game-video-3"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="project-carousel-navigators"
+                    id="project-game-navigator"
+                  >
+                    <div id="project-game-navigator-prev">
+                      <i class="fa fa-angle-left"></i>
+                      <p>prev game</p>
+                    </div>
+                    <div id="project-game-navigator-next">
+                      <i class="fa fa-angle-right"></i>
+                      <p>next game</p>
+                    </div>
+                  </div>
+                  <div
+                    id="project-game-carousel-selector"
+                    class="project-carousel-selector"
+                  >
+                    <div
+                      class="project-carousel-selector-div project-game-carousel-selector-div is-selected"
+                    >
+                      <p>Eclipse Odyssey</p>
+                    </div>
+                    <div
+                      class="project-carousel-selector-div project-game-carousel-selector-div"
+                    >
+                      <p>Cosmo Wars</p>
+                    </div>
+                    <div
+                      class="project-carousel-selector-div project-game-carousel-selector-div"
+                    >
+                      <p>Soul Rift</p>
+                    </div>
+                    <div
+                      class="project-carousel-selector-div project-game-carousel-selector-div"
+                    >
+                      <p>Blow Your Mind</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  id="project-div-2"
+                  class="project-catergories-div"
+                  style="padding-top: 0px"
+                >
+                  <div
+                    id="project-model-carousel-div"
+                    class="project-carousel-div carousel slide"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active project-game-cell">
+                        <h1
+                          class="project-title"
+                          style="
+                            font-family: Martytic;
+                            word-spacing: 8px;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          <span
+                            style="
+                              color: rgb(33, 239, 33);
+                              text-shadow: 0px 0px 5px #ff3a3a,
+                                0px 0px 10px #c50000;
+                              -webkit-text-stroke: 1px rgb(203, 4, 4);
+                            "
+                            >The Tragedy of Hectave</span
+                          >
+                        </h1>
+                        <p class="description">
+                          <strong>The Tragedy of Hectave</strong> series is set
+                          in the kingdom of Hectave, where King and Queen
+                          Hectave lived with their two children, Princess
+                          Octavia and Prince Oliver. Tragedy struck when the
+                          King and Queen died tragically in an accident. As the
+                          elder sibling, Octavia has long prepared to inherit
+                          the throne, only to be blindsided by the royal
+                          advisor's shocking announcement that the late King had
+                          ordered for Oliver to be his successor.In anguish, she
+                          steals Hectave's sacred power source, unleashing its
+                          destructive force and banishing Oliver from the
+                          Kingdom. Now, with darkness creeping over Hectave,
+                          Oliver must embark on a treacherous journey to make
+                          things right with her sister.
+                        </p>
+                        <div
+                          class="project-content"
+                          style="padding: 20px 0px; overflow-x: scroll"
+                        >
+                          <div
+                            class="project-content-div project-game-content-div"
+                          >
+                            <model-viewer
+                              alt=""
+                              src="../Assets/3DModels/Octavia.glb"
+                              ar
+                              shadow-intensity="1"
+                              camera-controls
+                              touch-action="pan-y"
+                              class="project-content-models"
+                            ></model-viewer>
+
+                            <model-viewer
+                              alt=""
+                              src="../Assets/3DModels/Oliver.glb"
+                              ar
+                              shadow-intensity="1"
+                              camera-controls
+                              touch-action="pan-y"
+                              class="project-content-models"
+                            ></model-viewer>
+
+                            <model-viewer
+                              alt=""
+                              src="../Assets/3DModels/OctaviaRobots.glb"
+                              ar
+                              shadow-intensity="1"
+                              camera-controls
+                              touch-action="pan-y"
+                              class="project-content-models"
+                            ></model-viewer>
+
+                            <model-viewer
+                              alt=""
+                              src="../Assets/3DModels/OlivePet.glb"
+                              ar
+                              shadow-intensity="1"
+                              camera-controls
+                              touch-action="pan-y"
+                              class="project-content-models"
+                            ></model-viewer>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item project-game-cell">
+                        <h3
+                          class="project-title"
+                          style="
+                            font-family: 'Coraline';
+                            color: rgb(255, 253, 114);
+                            -webkit-text-stroke: 1px black;
+                            margin-bottom: 15px;
+                          "
+                        >
+                          Morgu Hunt
+                        </h3>
+                        <p class="description">
+                          The Morgu Hunt series is heavily inspired by the
+                          stop-motion classic, "Coraline". It follows Morgu and
+                          her loyal cat, both trapped in the Other World, as
+                          they desperately seek to escape the clutches of her
+                          sinister mother. To reflect Morgu’s innocence, I
+                          designed her as a young girl with subtle nods to the
+                          film, such as a dragonfly pin in her hair. To set the
+                          game's tone, the main menu features an animation of
+                          Morgu walking through the woods, while the profile
+                          screen depicts her struggling to break free from being
+                          tied up, foreshadowing the perilous journey ahead.
+                        </p>
+                        <div class="project-content" style="overflow-x: scroll">
+                          <div
+                            class="project-content-div project-game-content-div"
+                            style="padding: 20px 0px"
+                          >
+                            <model-viewer
+                              alt=""
+                              src="./Assets/3DModels/Coraline.glb"
+                              ar
+                              shadow-intensity="1"
+                              camera-controls
+                              touch-action="pan-y"
+                              class="project-content-models"
+                            ></model-viewer>
+                            <video
+                              style="width: 400px"
+                              class="project-model-video project-models-video-1"
+                              loop
+                              muted
+                            >
+                              <source
+                                src="./Assets/Videos/MorguHunt_Main.mp4"
+                                type="video/mp4"
+                              />
+                            </video>
+                            <video
+                              style="width: 400px"
+                              class="project-model-video project-models-video-1"
+                              loop
+                              muted
+                            >
+                              <source
+                                src="./Assets/Videos/MorguHunt_Profile.mp4"
+                                type="video/mp4"
+                              />
+                            </video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="project-carousel-navigators"
+                    id="project-model-navigator"
+                  >
+                    <div id="project-model-navigator-prev" data-slide="prev">
+                      <i class="fa fa-angle-left"></i>
+                      <p>prev model</p>
+                    </div>
+                    <div id="project-model-navigator-next" data-slide="next">
+                      <i class="fa fa-angle-right"></i>
+                      <p>next model</p>
+                    </div>
+                  </div>
+                  <div
+                    id="project-model-carousel-selector"
+                    class="project-carousel-selector"
+                  >
+                    <div
+                      class="project-carousel-selector-div project-model-carousel-selector-div is-selected"
+                    >
+                      <p>The Tragedy Of Hectave</p>
+                    </div>
+                    <div
+                      class="project-carousel-selector-div project-model-carousel-selector-div"
+                    >
+                      <p>Morgu Hunt</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project-catergories-div">
+                  <div id="project-website-cell">
+                    <h1
+                      class="project-title"
+                      style="
+                        font-family: 'WarPriest';
+                        color: #ffd900;
+                        -webkit-text-stroke: 1.5px #b89c00;
+                      "
+                    >
+                      Monster World
+                    </h1>
+                    <p class="description">
+                      Monster World is a game website centered around battles
+                      and clans. I worked on mainly the clan system, allowing
+                      players to create or join clans, which hopes to build
+                      friendships and community. Each clan has 3 rooms: The
+                      Hive, Rock, Paper, Scissors, and Disco. These rooms are
+                      inspired by my favourite childhood game, Club Penguin.
+                    </p>
+                    <div style="overflow-x: scroll">
+                      <div id="project-website-video-div">
+                        <div>
+                          <iframe
+                            src="https://www.youtube.com/embed/IiaiR-g6X6k?si=eqgkFKbs5GIN44rz"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            class="project-website-video"
+                          ></iframe>
+                          <p class="project-website-video-caption">
+                            The Hive is inspired by The Sims, allowing clan
+                            members to use their clan points to purchase
+                            furnitures and customise their clan rooms. Rewards
+                            will be given to the best hive every month.
+                          </p>
+                        </div>
+                        <div>
+                          <iframe
+                            src="https://www.youtube.com/embed/BxsAlGY6ZiM?si=yQVIWDKmiJzKuo8C"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            class="project-website-video"
+                          ></iframe>
+                          <p class="project-website-video-caption">
+                            Chat Messages enables players to communicate with
+                            friends and clanmates. Players can send, retrieve,
+                            edit, and delete messages, creating interactive
+                            conversations.
+                          </p>
+                        </div>
+                        <div>
+                          <iframe
+                            src="https://www.youtube.com/embed/sdiqp1-r40U?si=JsjCxzN32WfqQq3g"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            class="project-website-video"
+                          ></iframe>
+                          <p class="project-website-video-caption">
+                            Rock, Paper, Scissors is a clan game where players
+                            can earn clan points by competing against NPC
+                            masters in a randomized game of rock, paper,
+                            scissors. In future updates, players can have
+                            real-time matches against theirs clanmates.
+                          </p>
+                        </div>
+                        <div>
+                          <iframe
+                            src="https://www.youtube.com/embed/osI6NTtAX80?si=q9CeowgoTWJfNz3a"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            class="project-website-video"
+                          ></iframe>
+                          <p class="project-website-video-caption">
+                            Clan Data is designed for clan leaders and
+                            co-leaders to monitor their clanmates'
+                            participation. Clan leaders and co-leaders can
+                            manage roles and remove inactive members.
+                          </p>
+                        </div>
+                        <div>
+                          <iframe
+                            src="https://www.youtube.com/embed/21M5bJc7BO4?si=GvrU8tpou4nZH3fb"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            class="project-website-video"
+                          ></iframe>
+                          <p class="project-website-video-caption">
+                            Disco Cosmo is inspired by Club Penguin's Night
+                            Club, offering a social space for clan members to
+                            bond. Currently, players can jump, but future
+                            updates will introduce dance competitions, real-time
+                            dancing with clan members and live chat.
+                          </p>
+                        </div>
+                        <div>
+                          <iframe
+                            src="https://www.youtube.com/embed/QoodmsvT0NU?si=qrRM1u5ntE8M70RD"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            class="project-website-video"
+                          ></iframe>
+                          <p class="project-website-video-caption">
+                            Create Clan is where players can create their own
+                            private or public clans.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internship  -->
+    <section id="internship-section" class="border-blue">
+      <div class="main-div">
+        <h1 class="section-title">My Internship @ Qallix</h1>
+        <div class="description" id="internship-description">
+          <p>
+            As a software engineer intern, I assisted in the full-stack
+            development of Qallix, an all-in-one e-commerce platform. During my
+            internship, I created and came up with various features to simplify
+            operations in e-commerce businesses.
+          </p>
+          <p class="internship-list-title" style="margin-top: 2px">
+            Key Features I have created:
+          </p>
+          <ol>
+            <li>
+              <p>Duplicate Products to Multiple Platform</p>
+            </li>
+
+            <li>
+              <p>Education Hub (Teach users how to use Qallix)</p>
+            </li>
+
+            <li>
+              <p>Batch Add Products</p>
+            </li>
+          </ol>
+          <p
+            style="
+              margin-top: 10px;
+              margin-bottom: 0px;
+              line-height: 25px;
+              font-weight: 500;
+            "
+          >
+            Furthermore, I have enhanced multiple features by redesigning them
+            with more purpose and engagement.
+          </p>
+          <p class="internship-list-title">Key Features I have enhanced:</p>
+          <ol>
+            <li>
+              <p>Inventory Management</p>
+            </li>
+            <li>
+              <p>Dashboard</p>
+            </li>
+            <li>
+              <p>Orders Management</p>
+            </li>
+          </ol>
+          <p
+            style="
+              margin-top: 10px;
+              margin-bottom: 0px;
+              line-height: 25px;
+              font-weight: 500;
+            "
+          >
+            With my significant contributions, Qallix was successful in
+            achieving major milestones.
+          </p>
+          <p class="internship-list-title">
+            Milestones Qallix achieved during my internship period:
+          </p>
+          <ol>
+            <li>
+              <p>
+                Infocomm Media Development Authority (IMDA) Pre-Approved
+                Solution Grant (Oct 2024)
+              </p>
+            </li>
+            <li>
+              <p>Amazon Selling Partner AppStore</p>
+            </li>
+            <li>
+              <p>Microsoft ISV.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <img src="/Assets/Images/Intern_SME.jpeg" id="internship-image" />
+          <p
+            style="margin-top: 10px; font-size: 14px; color: rgb(130, 130, 130)"
+          >
+            I represented Qallix to present our website at the SME Center
+            Conference 2024
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Achievements-->
+    <section id="achievement-section" class="border-red">
+      <div class="main-div">
+        <h1 class="section-title">My Achievements</h1>
+        <div class="achievement-flags-main-div">
+          <div class="achievement-div">
+            <div class="achievement-pictures">
+              <img src="/Assets/Images/POLITE2023.jpeg" />
+            </div>
+            <div class="achievement-flags">
+              <h5 class="achievement-title">
+                POLITE Road Race Women's Team 1st 2023
+              </h5>
+              <p class="achievement-description">
+                I competed in a 4km race event among other polytechnic and ITE.
+                As one of the first four runners in my team, my race position
+                contributed to valuable points that was critical in securing a
+                gold medal for the overall women's team.
+              </p>
+            </div>
+          </div>
+          <div class="achievement-div">
+            <div class="achievement-pictures">
+              <img src="/Assets/Images/POLITE2024.jpeg" />
+            </div>
+            <div class="achievement-flags">
+              <h5 class="achievement-title">
+                POLITE Road Race Women's Team 2nd 2024
+              </h5>
+              <p class="achievement-description">
+                I competed in the 4km race event among the other polytechnic and
+                ITE. My overall position was contributed to the overall points
+                that awarded us the silver medal for overall women's team.
+              </p>
+            </div>
+          </div>
+          <div class="achievement-div">
+            <div class="achievement-pictures">
+              <img src="/Assets/Images/ExcellenceAward2023.jpeg" />
+            </div>
+            <div class="achievement-flags">
+              <h5 class="achievement-title">Sports Team Of The Year 2023</h5>
+              <p class="achievement-description">
+                I contributed to the POLITE Road Race Women's Team 1st Place
+                (2023) and the POLITE Women's Team 1st Place (2023), which
+                earned us Singapore Polytechnic's Sports Team of the Year award.
+              </p>
+            </div>
+          </div>
+          <div class="achievement-div">
+            <div class="achievement-pictures">
+              <img src="/Assets/Images/EdusaveAward2024.jpeg" />
+            </div>
+            <div class="achievement-flags">
+              <h5 class="achievement-title">Edusave Merit Bursary 2024</h5>
+            </div>
+          </div>
+          <div class="achievement-div">
+            <div class="achievement-pictures">
+              <img src="/Assets/Images/EdusaveAward2023.jpeg" />
+            </div>
+            <div class="achievement-flags">
+              <h5 class="achievement-title">Edusave Merit Bursary 2023</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Hobbies-->
+    <section></section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      /*Project Carousel*/
+      const projectGameCarousel = new Flickity("#project-game-carousel-div", {
+        cellAlign: "center",
+        wrapAround: true,
+        freeScroll: true,
+        pageDots: false,
+        prevNextButtons: false,
+        draggable: false,
+      });
+      var gameCarouselCurrentIndex = 0;
+
+      const projectModelCarousel = new bootstrap.Carousel(
+        "#project-model-carousel-div",
+        {
+          interval: false,
+          wrap: true,
+        }
+      );
+      var modelCarouselCurrentIndex = 0;
+
+      /*Project Swiper*/
+      const projectSwiper = new Swiper("#project-container-swiper", {
+        followFinger: false,
+        allowTouchMove: false,
+        navigation: false,
+        pagination: false,
+        effect: "flip",
+        speed: 500,
+      });
+
+      var currentCategoryIndex = 0;
+
+      var projectCatergoryArr = ["game", "model", "website"];
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setUpProjectCarousel();
+        setUpDimension();
+      });
+      window.addEventListener("resize", () => {
+        setUpDimension();
+      });
+
+      function setUpDimension() {
+        if (window.innerWidth > 968) {
+          var maxAchievementHeight = 0;
+          document.querySelectorAll(".achievement-flags").forEach((flagEle) => {
+            flagEle.style.height = "auto";
+            if (flagEle.offsetHeight > maxAchievementHeight) {
+              maxAchievementHeight = flagEle.offsetHeight;
+            }
+          });
+          document.querySelectorAll(".achievement-flags").forEach((flagEle) => {
+            flagEle.style.height = maxAchievementHeight + "px";
+            flagEle.style.flex = "	0 1 auto";
+          });
+          document
+            .querySelectorAll(".achievement-pictures")
+            .forEach((picEle) => {
+              picEle.style.flex = "	0 1 auto";
+              picEle.style.height = maxAchievementHeight + "px";
+              picEle.style.width = maxAchievementHeight + "px";
+            });
+        } else {
+          checkNavigatorPrevNext();
+        }
+      }
+
+      //Setting up Project Carousel
+      function setUpProjectCarousel() {
+        const gameCarouselSelector = document.querySelectorAll(
+          `.project-game-carousel-selector-div`
+        );
+
+        //Game Navigator Previous
+        document
+          .getElementById(`project-game-navigator-prev`)
+          .addEventListener("click", () => {
+            projectGameCarousel.previous();
+          });
+
+        //Game Navigator Next
+        document
+          .getElementById(`project-game-navigator-next`)
+          .addEventListener("click", () => {
+            projectGameCarousel.next();
+          });
+
+        //Setting Game Selector on click
+        gameCarouselSelector.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            projectGameCarousel.select(index);
+          });
+        });
+
+        //Setting Game Selector on select
+        projectGameCarousel.on("select", function () {
+          gameCarouselCurrentIndex = projectGameCarousel.selectedIndex;
+          checkNavigatorPrevNext();
+          gameCarouselSelector.forEach((dot, index) => {
+            if (projectGameCarousel.selectedIndex === index) {
+              dot.classList.add("is-selected");
+              document.getElementById(`project-game-video-${index}`).src +=
+                "autoplay=1";
+            } else {
+              dot.classList.remove("is-selected");
+              document.getElementById(`project-game-video-${index}`).src =
+                document
+                  .getElementById(`project-game-video-${index}`)
+                  .src.replace("autoplay=1", "");
+            }
+          });
+        });
+
+        //Model Selector
+        const modelCarouselSelector = document.querySelectorAll(
+          `.project-model-carousel-selector-div`
+        );
+        modelCarouselSelector.forEach((modelSelector, selectorIndex) => {
+          modelSelector.addEventListener("click", () => {
+            projectModelCarousel.to(selectorIndex);
+          });
+        });
+        //Model Carousel Prev
+        document
+          .getElementById(`project-model-navigator-prev`)
+          .addEventListener("click", () => {
+            projectModelCarousel.prev();
+          });
+        //Model Carousel Next
+        document
+          .getElementById(`project-model-navigator-next`)
+          .addEventListener("click", () => {
+            projectModelCarousel.next();
+          });
+
+        //Model Carousel Select
+        $("#project-model-carousel-div").on("slid.bs.carousel", (e) => {
+          modelCarouselCurrentIndex = e.to;
+          checkNavigatorPrevNext();
+          modelCarouselSelector.forEach((modelSelector, selectorIndex) => {
+            if (e.to === selectorIndex) {
+              modelSelector.classList.add("is-selected");
+              var modelVideoArr =
+                document.querySelectorAll(`.project-models-video-${e.to}`) ??
+                [];
+              modelVideoArr.forEach((modelVid) => {
+                modelVid.play();
+              });
+            } else {
+              modelSelector.classList.remove("is-selected");
+            }
+          });
+        });
+      }
+      //Swiper On Change
+      function changeProjectCategory(index) {
+        currentCategoryIndex = index;
+        projectSwiper.slideTo(index);
+        if (
+          projectCatergoryArr[index] === "game" ||
+          projectCatergoryArr[index] === "model"
+        ) {
+          checkNavigatorPrevNext();
+        }
+        document
+          .querySelectorAll(".project-catergories-tab")
+          .forEach((ele, eleIndex) => {
+            if (index === eleIndex) {
+              ele.classList.add("selected");
+            } else {
+              if (projectCatergoryArr[index] === "model") {
+                document
+                  .querySelectorAll(`.project-game-video`)
+                  .forEach((videoEle) => {
+                    videoEle.src = videoEle.src.replace("autoplay=1", "");
+                  });
+                document
+                  .querySelectorAll(`.project-website-video`)
+                  .forEach((videoEle) => {
+                    videoEle.src = videoEle.src.replace("autoplay=1", "");
+                  });
+              } else {
+                document
+                  .querySelectorAll(`.project-model-video`)
+                  .forEach((videoEle) => {
+                    videoEle.pause();
+                  });
+              }
+              ele.classList.remove("selected");
+            }
+          });
+      }
+
+      function checkNavigatorPrevNext() {
+        var nextButton = document.getElementById(
+          `project-${projectCatergoryArr[currentCategoryIndex]}-navigator-next`
+        );
+
+        var prevButton = document.getElementById(
+          `project-${projectCatergoryArr[currentCategoryIndex]}-navigator-prev`
+        );
+
+        var navigatorDiv = document.getElementById(
+          `project-${projectCatergoryArr[currentCategoryIndex]}-navigator`
+        );
+
+        var currentSelectIndex = 0;
+        var maxCategorySlide =
+          document.querySelectorAll(
+            `.project-${projectCatergoryArr[currentCategoryIndex]}-carousel-selector-div`
+          ).length - 1;
+
+        if (projectCatergoryArr[currentCategoryIndex] === "game") {
+          currentSelectIndex = gameCarouselCurrentIndex;
+        } else if (projectCatergoryArr[currentCategoryIndex] === "model") {
+          currentSelectIndex = modelCarouselCurrentIndex;
+        }
+
+        if (currentSelectIndex === 0) {
+          prevButton.style.display = "none";
+          nextButton.style.display = "flex";
+          navigatorDiv.style.justifyContent = "end";
+        } else if (currentSelectIndex === maxCategorySlide) {
+          nextButton.style.display = "none";
+          prevButton.style.display = "flex";
+          navigatorDiv.style.justifyContent = "start";
+        } else {
+          prevButton.style.display = "flex";
+          nextButton.style.display = "flex";
+          navigatorDiv.style.justifyContent = "space-between";
+        }
+      }
+    </script>
+  </body>
+</html>

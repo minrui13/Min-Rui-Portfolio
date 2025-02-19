@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url("/Assets/Font/Nexa-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Coolvetica Lt';
+    src: url("/Assets/Font/CoolveticaLt-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Frenstyle';
+    src: url("/Assets/Font/Frenstyle.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AutoMode';
+    src: url("/Assets/Font/Auto\ Mode.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url("/Assets/Font/LEMONMILK-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'AngerStyle';
+    src: url("/Assets/Font/AngerStyles.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'OverThere';
+    src: url("/Assets/Font/Over\ There.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "WarPriest";
+    src: url("/Assets/Font/WarPriestRegular-PanE.ttf");
+}
+
+
+@font-face {
+    font-family: "Coraline";
+    src: url("/Assets/Font/Coraline\'s\ Cat.otf");
+}
+
+@font-face {
+    font-family: "Martytic";
+    src: url("/Assets//Font/Martyric_PersonalUse.ttf");
+}
+
+:root {
+    --warm-white: #f9f8f6;
+    --gochujang-red: #970000;
+    --crimson-red: #c1121f;
+    --cosmo-blue: #00527e;
+    --marble-blue: #669bbc;
+    --light-blue: #abd0e7;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width:928px) {
+    section {
+        padding: 40px 40px;
+    }
+}
+
+@media (min-width:928px) {
+    section {
+        padding: 40px 80px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nexa';
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    background-color: var(--warm-white);
+}
+
+.main-div {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.section-title {
+    color: var(--gochujang-red);
+}
+
+.description {
+    line-height: 30px;
+    font-family: 'Trebuchet MS'
+}
