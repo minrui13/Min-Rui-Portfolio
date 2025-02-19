@@ -152,7 +152,7 @@
 
 /*Intro*/
 #intro-section {
-  background-image: url("/Assets/Images/me_collage.jpeg");
+  background-image: url("Assets/Images/me_collage.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
