@@ -1,54 +1,54 @@
 @font-face {
     font-family: 'Nexa';
-    src: url("Assets/Font/Nexa-Heavy.ttf") format("truetype");
+    src: url("../Assets/Font/Nexa-Heavy.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Coolvetica Lt';
-    src: url("Assets/Font/CoolveticaLt-Regular.ttf") format("truetype");
+    src: url("../Assets/Font/CoolveticaLt-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Frenstyle';
-    src: url("Assets/Font/Frenstyle.otf") format("opentype");
+    src: url("../Assets/Font/Frenstyle.otf") format("opentype");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AutoMode';
-    src: url("Assets/Font/Auto\ Mode.otf") format("opentype");
+    src: url("../Assets/Font/Auto\ Mode.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'LemonMilk';
-    src: url("Assets/Font/LEMONMILK-Bold.otf") format("opentype");
+    src: url("../Assets/Font/LEMONMILK-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'AngerStyle';
-    src: url("Assets/Font/AngerStyles.ttf") format("truetype");
+    src: url("../Assets/Font/AngerStyles.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'OverThere';
-    src: url("Assets/Font/Over\ There.ttf") format("truetype");
+    src: url("../Assets/Font/Over\ There.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "WarPriest";
-    src: url("Assets/Font/WarPriestRegular-PanE.ttf");
+    src: url("../Assets/Font/WarPriestRegular-PanE.ttf");
 }
 
 
 @font-face {
     font-family: "Coraline";
-    src: url("Assets/Font/Coraline\'s\ Cat.otf");
+    src: url("../Assets/Font/Coraline\'s\ Cat.otf");
 }
 
 @font-face {
     font-family: "Martytic";
-    src: url("Assets//Font/Martyric_PersonalUse.ttf");
+    src: url("../Assets//Font/Martyric_PersonalUse.ttf");
 }
 
 :root {
