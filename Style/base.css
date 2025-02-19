@@ -60,10 +60,6 @@
     --light-blue: #abd0e7;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 @media (max-width:928px) {
     section {
         padding: 40px 40px;
@@ -74,6 +70,10 @@
     section {
         padding: 40px 80px;
     }
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 h1,
