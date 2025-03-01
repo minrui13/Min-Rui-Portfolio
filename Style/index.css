@@ -1,23 +1,14 @@
 @media (max-width: 768px) {
-  #intro-main-div {
-    padding: 80px 40px;
-  }
-
   #intro-section {
     background-size: auto 100%;
   }
+
+
 }
 
-@media (min-width: 768px) {
-  #intro-main-div {
-    padding: 40px 80px;
-  }
-}
+@media (min-width: 768px) {}
 
 @media (max-width: 928px) {
-  #intro-main-div div {
-    width: 100%;
-  }
 
   #internship-image {
     width: 100%;
@@ -80,9 +71,6 @@
 @media (max-width: 1020px) and (min-width: 768px) {
   #intro-section {
     height: 100vh;
-  }
-
-  #intro-section {
     background-size: auto 100%;
   }
 }
@@ -95,60 +83,262 @@
   }
 }
 
+@media (max-width:820px) {
+  #intro-book {
+    display: none;
+  }
 
-@media (max-width: 1230px) and (min-width: 1085px) {
-  #intro-main-div div {
-    width: 60%;
+  #intro-sm-div {
+    display: block;
+  }
+
+  #intro-main-div {
+    padding: 80px 40px;
   }
 }
 
-@media (min-width: 1230px)and (max-width: 1520px) {
-  #intro-main-div div {
-    width: 50%;
+@media (min-width:820px) {
+  #intro-book {
+    display: flex;
+  }
+
+  #intro-sm-div {
+    display: none;
   }
 }
 
-@media (max-width: 1520px) {
-  #intro-heading {
-    font-size: 45px;
+@media (max-width: 920px) and (min-width:820px) {
+
+  #intro-book {
+    height: calc(100vh*0.8);
+    width: 380px;
   }
 
-  #intro-main-div div {
-    padding: 30px 40px;
+  .intro-book-page {
+    height: calc(100vh*0.7);
+    width: 350px;
   }
 
-  #intro-main-div p {
-    line-height: 35px;
+  #intro-book-page-1-gif-1 {
+    top: -40px;
+    right: -10px;
+    width: 80px;
+  }
+
+  #intro-book-page-1-gif-2 {
+    top: 205px;
+    right: -5px;
+    width: 80px;
+  }
+
+  #intro-book-page-1-gif-3 {
+    top: 210px;
+    right: 200px;
+    width: 80px;
+  }
+
+  #intro-book-page-1-gif-4 {
+    top: -30px;
+    right: 200px;
+    width: 90px;
+  }
+
+  #intro-book-page-2-text {
+    font-size: 24px;
   }
 }
 
-@media (min-width: 1520px) {
-  #intro-main-div div {
-    width: 70%;
+@media (max-width:1300px) {
+  @keyframes moveBook {
+    to {
+      transform: translateX(200px);
+    }
+  }
+}
+
+@media (min-width:1300px) {
+  @keyframes moveBook {
+    to {
+      transform: translateX(250px);
+    }
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 920px) {
+  .intro-book-page {
+    height: 430px;
+    width: 370px;
   }
 
-  #intro-heading {
+  #intro-book {
+    height: 500px;
+    width: 400px;
+  }
+
+  #intro-book-page-1-gif-1 {
+    top: -50px;
+    right: -10px;
+    width: 100px;
+  }
+
+  #intro-book-page-1-gif-2 {
+    top: 200px;
+    right: -10px;
+    width: 100px;
+  }
+
+  #intro-book-page-1-gif-3 {
+    top: 220px;
+    right: 210px;
+    width: 100px;
+  }
+
+  #intro-book-page-1-gif-4 {
+    top: -40px;
+    right: 220px;
+    width: 100px;
+  }
+
+  #intro-book-page-2-text {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1700px) {
+  .intro-book-page {
+    height: 530px;
+    width: 470px;
+  }
+
+  #intro-book {
+    height: 600px;
+    width: 500px;
+  }
+
+  #intro-book-cover-heading {
+    font-size: 50px;
+  }
+
+  #intro-book-page-1-gif-1 {
+    top: -50px;
+    right: 0px;
+    width: 110px;
+  }
+
+  #intro-book-page-1-gif-2 {
+    top: 310px;
+    right: 0px;
+    width: 110px;
+
+  }
+
+  #intro-book-page-1-gif-3 {
+    top: 310px;
+    right: 300px;
+    width: 110px;
+  }
+
+  #intro-book-page-1-gif-4 {
+    top: -30px;
+    right: 300px;
+    width: 110px;
+  }
+
+  #intro-book-page-2-text {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  .intro-book-page {
+    height: 580px;
+    width: 520px;
+  }
+
+  #intro-book {
+    height: 650px;
+    width: 550px;
+  }
+
+  #intro-book-cover-heading {
+    font-size: 60px;
+  }
+
+  #intro-book-page-1-gif-1 {
+    top: -50px;
+    right: 0px;
+    width: 130px;
+  }
+
+  #intro-book-page-1-gif-2 {
+    top: 340px;
+    right: -10px;
+    width: 130px;
+  }
+
+  #intro-book-page-1-gif-3 {
+    top: 350px;
+    right: 350px;
+    width: 130px;
+  }
+
+  #intro-book-page-1-gif-4 {
+    top: -40px;
+    right: 350px;
+    width: 130px;
+  }
+
+  #intro-book-page-2-text {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 2000px) {
+
+  #intro-book {
+    height: 750px;
+    width: 650px;
+  }
+
+  .intro-book-page {
+    height: 650px;
+    width: 580px;
+  }
+
+
+  #intro-book-cover-heading {
     font-size: 70px;
   }
 
-  #intro-main-div div {
-    padding: 40px 60px;
+  #intro-book-page-1-gif-1 {
+    top: -50px;
+    right: 0px;
+    width: 130px;
   }
 
-  #intro-main-div p {
-    font-size: 30px;
-    line-height: 55px;
+  #intro-book-page-1-gif-2 {
+    top: 380px;
+    right: -20px;
+    width: 150px;
   }
 
+  #intro-book-page-1-gif-3 {
+    top: 410px;
+    right: 390px;
+    width: 140px;
+  }
+
+  #intro-book-page-1-gif-4 {
+    top: -40px;
+    right: 380px;
+    width: 150px;
+  }
+
+  #intro-book-page-2-text {
+    font-size: 34px;
+  }
 }
 
-.border-red {
-  border-top: 5px solid var(--gochujang-red);
-}
-
-.border-blue {
-  border-top: 5px solid var(--marble-blue);
-}
 
 /*Intro*/
 #intro-section {
@@ -157,26 +347,29 @@
   background-repeat: no-repeat;
   max-width: 100%;
   padding: 0px;
+  margin-top: 40px;
 }
 
 #intro-section-background {
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(200, 200, 200, 0.1);
 }
 
 #intro-main-div {
-  max-width: 1500px;
-  margin: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  overflow: hidden;
 }
 
-#intro-main-div div {
+#intro-sm-div {
   background-color: var(--warm-white);
   filter: drop-shadow(0px 0px 8px rgb(141, 141, 141));
+  padding: 30px 40px;
+  width: 100%;
 }
 
 #intro-heading {
@@ -185,15 +378,211 @@
   font-weight: 700;
   -webkit-text-stroke: 0.5px;
   margin: 0px;
+  font-size: 45px;
 }
 
-#intro-main-div p {
+#intro-sm-div p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
   color: rgb(0, 0, 0);
   -webkit-text-stroke: 0.1px;
   margin: 10px 0px;
+  line-height: 35px;
 }
+
+#intro-book {
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  perspective: 1500px;
+  animation: moveBook 1s ease-out 2s forwards;
+  box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.29);
+}
+
+
+
+
+#intro-book-cover,
+#intro-book-back-cover {
+  background-color: var(--marble-blue);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center left;
+}
+
+#intro-book-cover {
+  position: absolute;
+  z-index: 3;
+  transition: transform 1s;
+  text-align: center;
+  animation: flipCover 1.01s ease-out 2s forwards;
+
+}
+
+@keyframes flipCover {
+  50% {
+    z-index: 3;
+    visibility: hidden
+  }
+
+  100% {
+    transition: transform 0.8s, z-index 0.5s 0.5s;
+    transform: rotateY(-180deg);
+    z-index: 1;
+
+  }
+}
+
+#intro-book-cover-heading {
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s ease-out forwards;
+  transition: visibility 0.2s ease-out 0.1s;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 0
+  }
+
+  0.1% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+
+#intro-book-back-cover {
+  position: relative;
+  z-index: 0;
+  border-left: 3px solid #0b6291;
+}
+
+.intro-book-page {
+  box-sizing: border-box;
+  position: absolute;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  background-color: white;
+  margin-left: 2.5px;
+  box-shadow: 5px 0px 10px rgba(130, 130, 130, 0.1);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.8s ease-out, z-index 0.5s 0.5s, border 0.5s ease-out 0.5s;
+}
+
+
+
+.intro-book-page:nth-child(2) {
+  z-index: 1;
+}
+
+
+
+.intro-book-page:nth-child(2)>div {
+  transform: scaleX(-1);
+}
+
+#intro-book-page-1-img-div {
+  width: 100%;
+  max-height: 0%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 4.9s ease, max-height 2.2s ease-out;
+}
+
+#intro-book-page-1-img {
+  width: 100%;
+  filter: drop-shadow(0px 0px 10px rgba(119, 119, 119, 0.1));
+}
+
+#intro-book-page-1-gif-1 {
+  position: absolute;
+  filter: saturate(200%) hue-rotate(230deg) drop-shadow(0px 0px 10px rgba(217, 217, 217, 0.1));
+}
+
+#intro-book-page-1-gif-2 {
+  position: absolute;
+  filter: brightness(90%) saturate(200%) hue-rotate(20deg) drop-shadow(0px 0px 10px rgba(118, 118, 118, 0.1));
+}
+
+#intro-book-page-1-gif-3 {
+  position: absolute;
+  filter: saturate(150%) hue-rotate(185deg) drop-shadow(0px 0px 10px rgba(217, 217, 217, 0.1));
+}
+
+#intro-book-page-1-gif-4 {
+  position: absolute;
+  filter: brightness(90%) saturate(250%) hue-rotate(80deg) drop-shadow(0px 0px 10px rgba(3, 3, 3, 0.1));
+}
+
+.intro-book-page-1-details {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+
+@keyframes flipPageOne {
+  from {
+    z-index: 1
+  }
+
+  to {
+    transform: rotateY(-180deg);
+    z-index: 2;
+    border-left: 3px dotted #c5c5c536;
+  }
+}
+
+.intro-book-page:nth-child(3) {
+  z-index: 2;
+}
+
+
+#intro-book-page-2-content {
+  opacity: 0;
+  max-width: 100%;
+  max-height: 0px;
+  transition: max-width 1s ease-out 0.5s, max-height 1s ease-out 0.5s, opacity 0.2s ease-out;
+  overflow: hidden;
+}
+
+#intro-book-page-2-text {
+  font-family: 'handwritten';
+  color: var(--marble-blue);
+  word-spacing: 5px;
+}
+
+@keyframes page2Text {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+
+  100% {
+    opacity: 1;
+    max-height: 100%;
+  }
+}
+
 
 /*Projects*/
 /*Project Categories Tab*/
@@ -370,10 +759,6 @@
 }
 
 /*Internship*/
-#internship-section .section-title {
-  color: var(--cosmo-blue);
-}
-
 .internship-list-title {
   color: var(--cosmo-blue) !important;
   font-weight: 500;

@@ -48,13 +48,19 @@
 
 @font-face {
     font-family: "Martytic";
-    src: url("../Assets//Font/Martyric_PersonalUse.ttf");
+    src: url("../Assets/Font/Martyric_PersonalUse.ttf");
+}
+
+@font-face {
+    font-family: "handwritten";
+    src: url("../Assets/Font/Dristan\ Story.otf");
 }
 
 :root {
     --warm-white: #f9f8f6;
     --gochujang-red: #970000;
     --crimson-red: #c1121f;
+    --light-red: #b9000c;
     --cosmo-blue: #00527e;
     --marble-blue: #669bbc;
     --light-blue: #abd0e7;
@@ -71,6 +77,15 @@
         padding: 40px 80px;
     }
 }
+
+.border-red {
+    border-top: 5px solid var(--gochujang-red);
+}
+
+.border-blue {
+    border-top: 5px solid var(--marble-blue);
+}
+
 
 ::-webkit-scrollbar {
     display: none;
@@ -95,16 +110,115 @@ section {
     background-color: var(--warm-white);
 }
 
+/*Nav Bar*/
+
+#navigation-bar {
+    padding: 8px;
+    transition: background-color 1s cubic-bezier(0, .50, .50, 1);
+}
+
+
+
+.nav-item a {
+    font-weight: 500;
+    transition: color 0.2s ease-out;
+}
+
+.nav-red {
+    background-color: var(--light-red);
+}
+
+
+.nav-red a {
+    color: white;
+}
+
+.nav-red a:hover {
+    color: #89abc0d7;
+}
+
+.nav-red .nav-item.active a {
+    color: var(--light-blue);
+    text-shadow: 0px 0px 5px rgba(125, 125, 125, 0.5);
+}
+
+.nav-blue {
+    background-color: var(--light-blue);
+}
+
+.nav-blue a {
+    color: var(--marble-blue);
+}
+
+.nav-blue a:hover {
+    color: #a0a0a0d7;
+}
+
+.nav-blue .nav-item.active a {
+    color: var(--cosmo-blue);
+}
+
+.nav-red .nav-item:not(.active) img {
+    filter:
+        drop-shadow(1px 1px rgb(163, 0, 0)) drop-shadow(-0.5px -0.1px rgb(163, 0, 0)) drop-shadow(0.67px 0px rgb(163, 0, 0));
+}
+
+.nav-blue .nav-item:not(.active) img {
+    filter:
+        drop-shadow(1px 1px rgb(0, 194, 247)) drop-shadow(-0.5px -0.1px rgb(0, 194, 247)) drop-shadow(0.67px 0px rgb(0, 194, 247));
+}
+
+.nav-item.active img {
+    filter:
+        drop-shadow(1px 1px rgb(255, 255, 255)) drop-shadow(-0.5px -0.1px rgb(255, 255, 255)) drop-shadow(0.67px 0px rgb(255, 255, 255));
+}
+
+
+
+
+/*Border section*/
+.border-blue .section-title {
+    color: var(--cosmo-blue);
+}
+
+.border-red .section-title {
+
+    color: var(--gochujang-red);
+}
+
 .main-div {
     max-width: 1500px;
     margin: auto;
 }
 
-.section-title {
-    color: var(--gochujang-red);
-}
 
 .description {
     line-height: 30px;
     font-family: 'Trebuchet MS';
+}
+
+.fadeIn {
+    animation: fadeIn 0.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
 }
